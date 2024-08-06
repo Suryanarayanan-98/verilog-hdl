@@ -1,0 +1,5 @@
+module top_module( input a,b,c,output w,x,y,z );
+    wire[2:0] cout;
+    assign cout = {a,b,c};
+    assign {w,x,y,z} = cout;
+endmodule
