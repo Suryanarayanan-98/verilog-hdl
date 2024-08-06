@@ -1,0 +1,16 @@
+module top_module(
+    input a,
+    input b,
+    input c,
+    input d,
+    output out,
+    output out_n   );
+    wire nul1 , nul2;
+    assign nul1 = a&b;
+    assign nul2 = c&d;
+    assign out = nul1 + nul2;
+    assign out_n =~ out;
+    
+    
+
+endmodule
